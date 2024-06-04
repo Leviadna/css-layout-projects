@@ -72,5 +72,5 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 .delivery-area .dropdown__box .inner__tf i:last-of-type{position:absolute;right:10px}
 .delivery-area .dropdown__box .inner__tf .selected__link{width:100%;padding:9px 35px 9px 50px;font-weight:700;text-align:justify}
 
-.doc-footer{position:fixed;left:0;bottom:0;right:0;max-width:500px;margin:auto;background-color:#a2e571}
+.doc-footer{position:fixed;left:0;bottom:0;right:0;z-index:40;max-width:500px;margin:auto;background-color:#a2e571}
 .doc-footer .btn__next{width:100%;height:90px;font-weight:900;font-size:20px;text-align:center}

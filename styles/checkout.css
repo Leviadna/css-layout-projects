@@ -52,5 +52,5 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 .con__list li .con__link .con__right .con__arrow{display:block;padding:5px}
 .con__list li .con__link .con__right .con__arrow i{font-size:35px}
 .empty__box{height:140px;border-top:4px solid #000;background-color:#c6caca}
-.doc-footer{position:fixed;left:0;bottom:0;right:0;max-width:500px;margin:auto;background-color:#a2e571}
+.doc-footer{position:fixed;left:0;bottom:0;right:0;z-index:40;max-width:500px;margin:auto;background-color:#a2e571}
 .doc-footer .btn__next{width:100%;height:90px;font-weight:900;font-size:20px;text-align:center}
