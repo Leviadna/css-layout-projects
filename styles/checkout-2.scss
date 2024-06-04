@@ -87,9 +87,10 @@ i{display:inline-block;font-size:20px;vertical-align:top}
   .dropdown__wrap{text-align:center;}
   .dropdown__box{display:inline-block;position:relative;width:80%;margin-bottom:15px;
     .inner__tf{display:flex;align-items:center;border:2px solid #000;border-radius:4px;box-sizing:border-box;
-      i:first-of-type{position:absolute;left:10px;}
-      i:last-of-type{position:absolute;right:10px;}
-      .selected__link{width:100%;padding:9px 35px 9px 50px;font-weight:bold;text-align:justify;}
+      .selected__link{width:100%;padding:9px 35px 9px 50px;font-weight:bold;text-align:justify;
+        i:first-of-type{position:absolute;left:10px;}
+        i:last-of-type{position:absolute;right:10px;}
+      }
     }
   }
 }
