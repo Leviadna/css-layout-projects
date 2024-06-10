@@ -1,0 +1,59 @@
+@charset "UTF-8";
+html,body{height:auto}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{font-weight:700;background:#333}
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,
+  Apple SD Gothic Neo,Segoe UI,Roboto,Arial,Malgun Gothic,맑은 고딕,sans-serif,
+  "Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;color:#000}
+a{display:block;color:#000;text-decoration:none}
+a:active,a:hover{text-decoration:none}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:400}
+i{display:inline-block;font-size:20px;vertical-align:top}
+.ir_so{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.img_g{display:inline-block;width:100%;vertical-align:top}
+.badge{display:flex;align-items:center;justify-content:center;width:18px;height:18px;font-size:10px;color:#dee2e2;border-radius:50%;background-color:#000}
+
+.container-doc{max-width:500px;min-height:100vh;margin:auto;background-color:#c6caca}
+
+.doc-header{width:100%;padding:40px 0 20px}
+.doc-header .header__box{display:flex;align-items:center;height:40px;margin:0 10px 0 14px}
+.doc-header .header__box .header__column{width:33%}
+.doc-header .header__box .header__column:last-child{display:flex;justify-content:flex-end}
+.doc-header .header__box .header__column:last-child .header__link{position:relative}
+.doc-header .header__box .header__column:last-child .header__link .header__link--cart{position:absolute;top:0;right:-5px}
+.doc-header .header__box .header__column .header__link{display:inline-block;width:20px;height:20px;padding:5px}
+.doc-header .header__box .header__column .header__tit{font-size:1rem;text-align:center}
+
+.wrap-info{color:#dee2e2;background-color:#000}
+.wrap-info .inner-info{padding:24px 15px;text-align:right}
+.wrap-info .inner-info .price__txt{display:block;font-weight:900;font-size:24px}
+.wrap-info .inner-info .number__txt{letter-spacing:1.1px}
+
+.cart__list{margin-bottom:90px}
+.cart__list li{position:relative;background-color:#dee2e2}
+.cart__list li+li{margin-top:30px;border-top:4px solid #000}
+.cart__list li .cart__link{display:flex;justify-content:space-between;height:300px;padding:25px 15px 45px;box-sizing:border-box}
+.cart__list li .cart__link .product__info{display:flex;flex-direction:column;align-items:flex-end;flex:1}
+.cart__list li .cart__link .product__info:first-child{align-items:flex-start}
+.cart__list li .cart__link .product__info .product__info--name{font-weight:900;font-size:42px;line-height:42px}
+.cart__list li .cart__link .product__info .product__info--edition{margin:15px 0}
+.cart__list li .cart__link .product__info .product__info--total{font-weight:900;font-size:32px}
+.cart__list li .cart__link .product__info .product__info--price{padding-top:5px;letter-spacing:1.1px}
+.cart__list li .cart__link .cart__link--thumb{position:absolute;left:50%;bottom:0;width:40%;border:4px solid #000}
+.cart__list li .cart__link .cart__link--thumb .img_g{min-height:100px}
+.cart__list li .select__opt{display:grid;grid-template:100px/1fr 1fr 2fr;border-top:4px solid #000;border-bottom:4px solid #000}
+.cart__list li .select__opt .opt__link{position:relative;display:flex;align-items:center}
+.cart__list li .select__opt .opt__link:first-child{border-right:4px solid #000}
+.cart__list li .select__opt .opt__link i{position:absolute;bottom:12%;right:15%}
+.cart__list li .select__opt .opt__link .opt__txt{width:50%;padding-left:10%;font-size:1.2em}
+
+.doc-footer{position:fixed;left:0;bottom:0;right:0;z-index:40;max-width:500px;margin:auto;background-color:#a2e571}
+.doc-footer .btn__next{width:100%;height:90px;font-weight:900;font-size:20px;text-align:center}

@@ -1,5 +1,5 @@
 @charset "utf-8";
-html,body{height:100%}
+html,body{height:auto}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
 fieldset,img{border:0 none}
 dl,ul,ol,menu,li{list-style:none}
@@ -8,7 +8,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 input,select,textarea,button{vertical-align:middle}
 input::-ms-clear{display:none}
 button{border:0 none;background-color:transparent;cursor:pointer}
-body{background:#333}
+body{font-weight:bold;background:#333}
 body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Apple SD Gothic Neo','Segoe UI',Roboto,Arial,'Malgun Gothic','맑은 고딕',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'; color:#000} /* color값은 디자인가이드에 맞게사용 */
 a{display:block;color:#000;text-decoration:none}
 a:active,a:hover{text-decoration:none}
@@ -19,12 +19,12 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 .ir_so{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 .img_g{display:inline-block;width:100%;vertical-align:top}
 
-.container-doc{max-width:500px;height:100%;margin:auto;background-color:#c6caca;}
+.container-doc{max-width:500px;min-height:100vh;margin:auto;background-color:#c6caca;}
 .doc-header{width:100%;padding:40px 0 20px;
   .header__box{display:flex;align-items:center;height:40px;margin:0 10px 0 14px;
     .header__column{width:33%;
       &:last-child{display:flex;justify-content:flex-end}
-      .header__link{display:block;width:20px;height:20px;padding:5px}
+      .header__link{display:inline-block;width:20px;height:20px;padding:5px}
       .header__tit{font-size:1rem;text-align:center}
     }
   }
@@ -38,8 +38,8 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 }
 
 .inner-info{display:flex;align-items:center;justify-content:space-between;padding:15px 10px;
-  .info__left{margin-left:5px;font-weight:bold;
-    .info__tit{display:block;font-weight:800;font-size:16px;}
+  .info__left{margin-left:5px;
+    .info__tit{display:block;font-weight:900;font-size:16px;}
   }
   .info__right{display:flex;align-items:center;position:relative;margin-right:5px;
     .graph__outer{width:16px;height:16px;padding:2px;border:2px solid #c6caca;border-radius:50%;box-sizing:border-box;
@@ -58,7 +58,7 @@ i{display:inline-block;font-size:20px;vertical-align:top}
     li{display:flex;align-items:center;margin-right:20px;
       .product__link{
         .product__left{width:150px;margin-right:12px;border:4px solid #000;text-align:center;background-color:#d7dbdb;box-sizing:border-box;
-          .product__left--info{padding:10px 0;font-weight:bold;font-size:16px;}
+          .product__left--info{padding:10px 0;font-size:16px;}
           .product__left--thumb{border-top:4px solid #000;border-bottom:4px solid #000;}
         }
       }
@@ -80,14 +80,14 @@ i{display:inline-block;font-size:20px;vertical-align:top}
   .delivery__list{display:flex;justify-content:space-around;padding:10px 0 18px;
     li{overflow:hidden;border:3px solid #000;border-radius:25px;
       &:last-child .delivery__link{color:#c6caca;background-color:#000;}
-      .delivery__link{display:block;padding:10px 25px;font-weight:bold;
+      .delivery__link{display:block;padding:10px 25px;
       }
     }
   }
   .dropdown__wrap{text-align:center;}
   .dropdown__box{display:inline-block;position:relative;width:80%;margin-bottom:15px;
     .inner__tf{display:flex;align-items:center;border:2px solid #000;border-radius:4px;box-sizing:border-box;
-      .selected__link{width:100%;padding:9px 35px 9px 50px;font-weight:bold;text-align:justify;
+      .selected__link{width:100%;padding:9px 35px 9px 50px;text-align:justify;
         i:first-of-type{position:absolute;left:10px;}
         i:last-of-type{position:absolute;right:10px;}
       }
