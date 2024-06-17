@@ -8,14 +8,15 @@ a:visited{color:#000}
 a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 i{display:inline-block;font-size:20px;vertical-align:top}
+::-webkit-scrollbar{display:none}
 .ir_so{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 .img_g{display:inline-block;width:100%;vertical-align:top}
 
-#main-nav{position:fixed;top:0;left:0;z-index:10;width:100%;height:100vh;text-align:center}
+#main-nav{display:none;position:fixed;top:0;left:0;z-index:10;width:100%;height:100vh;text-align:center}
 #main-border{position:absolute;top:0;left:0;width:100%;height:100%;border:#fff solid 50px}
 #main-logo{position:absolute;top:11px;width:100%;line-height:1em;text-align:center}
 .main__link{font-size:18px}
-.nav__list{display:none;width:100%;height:100%}
+.nav__list{width:100%;height:100%}
 .nav__list>li{position:absolute;top:0;width:100%;height:100%;transition:padding .25s ease;will-change:padding;pointer-events:none}
 .nav__list>li:first-child{padding:50px}
 .nav__list>li:nth-child(2){padding:60px 100px}
@@ -57,12 +58,12 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 .toolbar__wrap .toolbar__list li .toolbar__link{color:#999}
 .toolbar__wrap .toolbar__list li:hover .toolbar__link{color:#000}
 
-#gallery-container{}
-#gallery-screen{}
+#gallery-container{padding:30px 0 25px}
+#gallery-screen{width:100%}
 .gallery__list{display:flex;justify-content:space-around;flex-wrap:wrap;margin:0 12px}
-.gallery__list li{width:48%}
+.gallery__list li{width:48%;margin-bottom:10px}
 .gallery__list li .gallery__link{display:block;width:100%}
-.gallery__list li .gallery__link .wrap__thumbmail{overflow:hidden;border-radius:4px}
+.gallery__list li .gallery__link .wrap__thumbnail{overflow:hidden;border-radius:4px}
 .gallery__list li .gallery__link .gallery__name{display:block;padding:10px 5px 20px 8px}
 
 @media(min-width:992px){
@@ -96,4 +97,7 @@ i{display:inline-block;font-size:20px;vertical-align:top}
 
   #doc-main{overflow-x:hidden;padding:52px 12px}
   #main-fluid{margin:0 auto;padding:0 25px}
+  .toolbar__wrap{text-align:center}
+  .toolbar__wrap .toolbar__list{float:none}
+  .gallery__list li{width:98%;margin-bottom:20px}
 }
