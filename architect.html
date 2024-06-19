@@ -69,13 +69,13 @@
         </div>
       </li>
     </ul>
-    <div id="main-menu">
+    <div id="main-menu" onclick="btnClick()">
       <a href="#none" class="menu__link">close<i class="fa-solid fa-xmark"></i></a>
     </div>
   </nav>
   <main id="doc-main">
     <div id="main-fluid">
-      <div id="category-screen">
+      <div id="content-screen">
         <ul class="content__list">
           <li><a href="#none" class="content__link">EDUCATION</a></li>
           <li><a href="#none" class="content__link">COMMUNITY</a></li>
@@ -85,7 +85,7 @@
       </div>
       <div id="toolbar-screen">
         <div class="toolbar__wrap">
-          <span class="">BROWSE BY CLIENT</span>
+          <span class="toolbar__client">BROWSE BY CLIENT</span>
           <ul class="toolbar__list">
             <li><a href="#none" class="toolbar__link">FEATURED</a></li>
             <li><a href="#none" class="toolbar__link">GALLERY</a></li>
@@ -94,7 +94,77 @@
         </div>
       </div>
     </div>
-    <div id="main-fluid"></div>
+    <div id="main-fluid">
+      <div id="gallery-container">
+        <div id="gallery-screen">
+          <ul class="gallery__list">
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-1.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Laurentian University Student Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-2.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Town of Aurora Armoury Canadian Food and Wine Institute</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-3.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Seneca Polytechnic Odeyto Indigenous Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-4.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Conestoga College School of Business A & B Wing Renovation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-1.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Laurentian University Student Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-2.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Town of Aurora Armoury Canadian Food and Wine Institute</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-3.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Seneca Polytechnic Odeyto Indigenous Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="gallery__link">
+                <div class="wrap__thumbnail"><img src="./img/col-4.jpg" class="img_g" alt=""></div>
+                <span class="gallery__name">Conestoga College School of Business A & B Wing Renovation</span>
+              </a>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
   </main>
+  <script>
+    let frontScreen=document.getElementById('main-nav');
+    let btnMenu=document.getElementById('main-menu');
+    let backScreen=document.getElementById('doc-main');
+    let a;
+    function btnClick(){
+      btnMenu.addEventListener('click',function(){
+        if(frontScreen.style.display=='none'){
+          frontScreen.style.display='block';
+        }else{
+          frontScreen.style.display='none';
+        }
+      });
+    } 
+  </script>
 </body>
 </html>
