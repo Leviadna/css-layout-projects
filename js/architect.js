@@ -1,0 +1,9 @@
+$('#main-menu').click(function(){
+  if($('body').hasClass('display-none-nav')){
+    $('body').removeClass('display-none-nav');
+    $('.nav__list>li:first-child').removeClass('active');
+  }else{
+    $('body').addClass('display-none-nav');
+    $('.nav__list>li:first-child').addClass('active');
+  }
+});
