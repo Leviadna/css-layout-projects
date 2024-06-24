@@ -1,0 +1,58 @@
+@charset "utf-8";
+*,*:before,*:after{box-sizing:border-box}
+body{font-family:"F Grotesk Book",sans-serif;-webkit-font-smoothing:antialiased}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+ul,li{list-style:none}
+a{color:#000;text-decoration:none}
+a:visited{color:#000}
+a:active,a:hover{text-decoration:none}
+a:active{background-color:transparent}
+i{display:inline-block;font-size:20px;vertical-align:top}
+button{border:0 none;background-color:transparent;cursor:pointer}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+#doc-container{display:flex;align-items:center;min-width:1440px;height:100vh;background-color:#aba}
+#inner-container{display:flex;width:1280px;height:720px;margin:auto;background-color:#ddd}
+:root{--border-style:2px solid #222}
+
+.cont_side{width:180px}
+.cont_side .wrap_disc{position:relative;height:180px;padding:12px}
+.cont_side .wrap_disc+.wrap_disc{border-top:var(--border-style)}
+.cont_side .wrap_disc .graph_disc{position:absolute;top:50%;left:50%;width:60px;height:90px;transform:translate(-50%,-50%)}
+.cont_side .wrap_disc .graph_disc .bar_disc{display:block;width:100%;height:18%}
+.cont_side .wrap_disc .graph_disc .bar_disc:first-child{border:2px solid #999;border-radius:10px 10px 0 0}
+.cont_side .wrap_disc .graph_disc .bar_disc:nth-child(2){background-color:#222}
+.cont_side .wrap_disc .graph_disc .bar_disc:nth-child(3){background-color:#cc0000}
+.cont_side .wrap_disc .graph_disc .bar_disc:nth-child(4){background-color:#999}
+.cont_side .wrap_disc .graph_disc .bar_disc:last-child{border:2px solid #999;border-radius:0 0 10px 10px}
+.cont_side .wrap_disc .graph_disc .bar_disc+.bar_disc{margin-top:2px}
+.cont_side .wrap_disc .circle_disc{overflow:hidden;position:relative;top:50%;left:50%;width:99px;height:99px;border-radius:50%;transform:translate(-50%,-50%)}
+.cont_side .wrap_disc .circle_disc .outer_disc{position:absolute;width:100%;height:100%;background-color:#222}
+.cont_side .wrap_disc:nth-of-type(3) .circle_disc .outer_disc{background-color:#cc0000}
+.cont_side .wrap_disc:nth-of-type(4) .circle_disc .outer_disc{background-color:#999}
+.cont_side .wrap_disc .circle_disc .inner_disc{position:absolute;top:50%;left:50%;width:25px;height:25px;border-radius:50%;background-color:#ddd;transform:translate(-50%,-50%)}
+.cont_side .wrap_disc .info_disc{position:absolute;left:10px;bottom:10px;right:10px}
+.cont_side .wrap_disc .info_disc .txt_disc{font-size:22px}
+.cont_side .wrap_disc .info_disc .txt_volume{font-size:16px}
+.cont_side .wrap_disc .info_disc .btn_reload{float:right;padding:5px}
+.cont_side .wrap_disc .info_disc .dot_disc{display:flex;align-items:flex-end;float:right;height:25px}
+.cont_side .wrap_disc .info_disc .dot{width:6px;height:6px;margin-left:3px;border-radius:3px;background-color:#999}
+.cont_side .wrap_disc .info_disc .dot.on{background-color:#222}
+
+.cont_info{width:360px;border-left:var(--border-style);border-right:var(--border-style)}
+.cont_info .wrap_item{border-bottom:var(--border-style)}
+.cont_info .wrap_item .info_item{padding:32px 72px 16px}
+.cont_info .wrap_item .info_item .tit_item{font-weight:bold;font-size:13px}
+.cont_info .wrap_item .info_item .txt_item{font-weight:bold;font-size:86px}
+.cont_info .wrap_setting{padding:56px 65px}
+.cont_info .wrap_setting .list_setting{text-align:center}
+.cont_info .wrap_setting .list_setting li+li{margin-top:20px}
+.cont_info .wrap_setting .list_setting .link_setting{display:block;padding:20px 15px;font-size:22px}
+
+.cont_stat{width:740px}
+.cont_stat .wrap_stat{display:flex;flex-direction:column;height:720px}
+.cont_stat .wrap_stat .info_stat{display:flex;justify-content:space-between;padding:15px}
+.cont_stat .wrap_stat .info_stat:first-child{flex:2.3}
+.cont_stat .wrap_stat .info_stat:nth-of-type(2){flex:0.8;background-color:#ffd500}
+.cont_stat .wrap_stat .info_stat:nth-of-type(3){flex:1.1;background-color:#808080}
+.cont_stat .wrap_stat .info_stat:nth-of-type(4){flex:1.8;color:#fff;background-color:#cc0000}
+.cont_stat .wrap_stat .info_stat:last-child{flex:2.4;color:#fff;background-color:#0000cd}

@@ -162,6 +162,17 @@
       $('.nav__list>li:first-child').addClass('active');
     }
   });
+
+  $('.menu__link-open').on("click",function(){
+    $('html, body').animate({
+    scrollTop : 0
+    },100)
+  });
+  $('.menu__link-close').on("click",function(){
+    $('html, body').animate({
+    scrollTop : 0
+    },100)
+  });
   </script>
 </body>
 </html>
