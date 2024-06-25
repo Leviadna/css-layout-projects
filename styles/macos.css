@@ -9,11 +9,11 @@ a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 i{display:inline-block;font-size:20px;vertical-align:top}
 button{border:0 none;background-color:transparent;cursor:pointer}
-.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
-#doc-container{display:flex;align-items:center;min-width:1440px;height:100vh;background-color:#aba}
-#inner-container{display:flex;width:1280px;height:720px;margin:auto;background-color:#ddd}
 :root{--border-style:2px solid #222}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 
+#doc-container{display:flex;align-items:center;min-width:1440px;height:100vh;background-color:#aba}
+#inner-container{display:flex;overflow:hidden;width:1280px;height:720px;margin:auto;border:var(--border-style);border-radius:10px;background-color:#ddd}
 .cont_side{width:180px}
 .cont_side .wrap_disc{position:relative;height:180px;padding:12px}
 .cont_side .wrap_disc+.wrap_disc{border-top:var(--border-style)}
@@ -47,6 +47,7 @@ button{border:0 none;background-color:transparent;cursor:pointer}
 .cont_info .wrap_setting .list_setting{text-align:center}
 .cont_info .wrap_setting .list_setting li+li{margin-top:20px}
 .cont_info .wrap_setting .list_setting .link_setting{display:block;padding:20px 15px;font-size:22px}
+.cont_info .wrap_setting .list_setting .link_setting:hover{color:#7c6c6c}
 
 .cont_stat{width:740px}
 .cont_stat .wrap_stat{display:flex;flex-direction:column;height:720px}
