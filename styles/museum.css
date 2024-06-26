@@ -24,7 +24,9 @@ button{border:0 none;background-color:transparent;cursor:pointer}
 #inner-container{display:grid;grid-template:1fr 1fr 4.5fr 3.5fr/.3fr repeat(4,1fr);gap:var(--border-width);width:1280px;height:700px;border:5px solid #000;border-radius:5px;background-color:#000}
 #inner-container > *{background-color:var(--bg-color)}
 #inner-container .box_logo{display:flex;align-items:center;justify-content:center;grid-area:span 2/span 2;font-size:98px;}
-#inner-container .box_tit{display:flex;align-items:center;justify-content:center;grid-column:span 3;font-weight:bold;font-size:56px}
+#inner-container .box_main{display:flex;grid-column:span 3}
+#inner-container .box_main .link_main{width:100%;text-align:center}
+#inner-container .box_main .link_main .txt_main{font-size:62px}
 #inner-container .box_nav{grid-column:span 3}
 #inner-container .box_nav .list_nav{display:flex;height:100%}
 #inner-container .box_nav .list_nav li{flex:1}
