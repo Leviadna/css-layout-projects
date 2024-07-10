@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>무진장</title>
   <link rel="stylesheet" href="./styles/mypage.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body class="is-web">
   <div class="container-doc">
@@ -34,34 +36,34 @@
             </div>
           </div>
         </header>
-        <div class="wrap_signup">
-          <div class="inner_signup">
+        <div class="wrap_profile">
+          <div class="area_signup">
             <a href="#none" class="link_signup">
               <p class="txt_notice">무진장 회원은 최대 4% 적립, 전 상품 무료배송 혜택</p>
               <span class="txt_signup">로그인/회원가입하기</span>
             </a>
           </div>
+          <ul class="list_point">
+            <li>
+              <a href="#none" class="link_point">
+                <span class="tit_point">적립금</span>
+                <span class="txt_point">22,320원</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="link_point">
+                <span class="tit_point">쿠폰</span>
+                <span class="txt_point">65장</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="link_point">
+                <span class="tit_point">후기 작성</span>
+                <span class="txt_point">5건</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="wrap_point">
-          <li>
-            <a href="#none" class="link_point">
-              <span class="tit_point">적립금</span>
-              <span class="txt_point">0원</span>
-            </a>
-          </li>
-          <li>
-            <a href="#none" class="link_point">
-              <span class="tit_point">쿠폰</span>
-              <span class="txt_point">0장</span>
-            </a>
-          </li>
-          <li>
-            <a href="#none" class="link_point">
-              <span class="tit_point">후기 작성</span>
-              <span class="txt_point">0건</span>
-            </a>
-          </li>
-        </ul>
         <div class="wrap_category">
           <button type="button" class="btn_category">
             <div class="tit_category">주문 내역</div>
@@ -175,8 +177,21 @@
             </li>
           </ul>
         </nav>
+        <div class="common_layout">
+          <button type="button" class="inner_layout btn_top">
+            <div class="ico_comm ico_top"><span class="screen_out">위로</span></div>
+          </button>
+          <a href="#none" class="inner_layout link_lately"><span class="screen_out">최근 본 상품 목록으로 이동</span></a>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    $('.btn_top').on("click",function(){
+      $('html, body').animate({
+        scrollTop : 0
+      },100)
+    });
+    </script>
 </body>
 </html>
