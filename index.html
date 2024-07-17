@@ -5,10 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>무진장</title>
-  <link rel="stylesheet" href="./styles/mypage-login.css">
+  <link rel="stylesheet" href="./styles/snap.css">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="is-web">
   <div class="container-doc">
@@ -16,7 +19,7 @@
       <div class="inner_container">
         <header class="doc-header">
           <h1 class="screen_out">무진장 스토어</h1>
-          <div class="wrap_header">
+          <div class="wrap_header user-select-none">
             <div class="box_header">
               <button type="button" class="btn_header">
                 <span class="screen_out">알림</span>
@@ -24,165 +27,299 @@
                 <span class="badge_new">99+</span>
               </button>
             </div>
-            <h2 class="screen_out">마이페이지</h2>
+            <h2 class="tit_page">snap</h2>
             <div class="box_header">
               <button type="button" class="btn_header">
-                <span class="screen_out">옵션</span>
-                <i class="fa-solid fa-gear"></i>
+                <span class="screen_out">검색</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </button>
               <button type="button" class="btn_header">
-                <span class="screen_out">카트</span>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="badge_cart">6</span>
+                <span class="screen_out">내 프로필</span>
+                <i class="fa-solid fa-circle-user"></i>
               </button>
             </div>
           </div>
         </header>
-        <div class="wrap_profile">
-          <div class="area_info">
-            <a href="#none" class="link_user">
-              <img src="./img/profile.png" class="img_g" alt="">
-              <div class="box_profile">
-                <p class="txt_name">얀망</p>
-                <p class="txt_grade">LV.6 골드 · 3% 적립 · 무료배송</p>
-              </div>
-            </a>
-            <a href="#none" class="link_user_snap">스냅 프로필</a>
-          </div>
-          <div class="line"></div>
-          <div class="area_benefit">
-            <a href="#none" class="link_benefit">
-              <div class="box_benefit">
-                <span class="txt_benefit">이번 달 받은 혜택</span>
-                <span class="txt_money">137,499원</span>
-              </div>
-            </a>
-          </div>
-          <ul class="list_point">
-            <li>
-              <a href="#none" class="link_point">
-                <span class="tit_point">적립금</span>
-                <span class="txt_point">0원</span>
-              </a>
-            </li>
-            <li>
-              <a href="#none" class="link_point">
-                <span class="tit_point">쿠폰</span>
-                <span class="txt_point">0장</span>
-              </a>
-            </li>
-            <li>
-              <a href="#none" class="link_point">
-                <span class="tit_point">후기 작성</span>
-                <span class="txt_point">0건</span>
-              </a>
-            </li>
-          </ul>
-          <div class="area_banner">
-            <a href="#none" class="link_banner">
-              <div class="thumb_banner"><img src="./img/banner.png" class="img_g" alt=""></div>
-              <div class="box_banner">
-                <p class="tit_banner">쇼핑 취향 입력하고</p>
-                <span class="txt_banner">내게 맞는 스타일과 상품 추천받기</span>
-              </div>
-            </a>
+        <div class="wrap_services">
+          <div class="inner_services">
+            <button type="button" class="btn_services">
+              <p class="txt_btn">추천</p>
+            </button>
+            <button type="button" class="btn_services">
+              <p class="txt_btn">팔로잉</p>
+            </button>
+            <hr class="line_services">
           </div>
         </div>
-        <div class="wrap_category">
-          <button type="button" class="btn_category">
-            <div class="tit_category">주문 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">취소/반품/교환 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">매장 결제 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">재입고 알림 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">최근 본 상품</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="box_category">
-              <div class="tit_category">나의 맞춤 정보</div>
-              <div class="txt_category">체형, 피부, 취향 정보 입력하고 상품 추천받기</div>
+        <div class="wrap_snap">
+          <section class="section-keyword">
+            <div class="area_section">
+              <div class="user-select-none">
+                <div class="inner_section">
+                  <h3 class="tit_section">트렌드 키워드</h3>
+                  <div class="swiper swiper-container" style="overflow:visible">
+                    <ul class="list_section swiper-wrapper">
+                      <li class="swiper-slide"><a href="#none" class="link_section all">전체</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#여름롱스커트</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#버뮤다팬츠코디</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#여자여행룩</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#남자여행룩</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#헤어클립</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#여름볼캡코디</a></li>
+                      <li class="swiper-slide"><a href="#none" class="link_section">#여자슬리브리스</a></li>
+                    </ul>
+                  </div>
+                  <div class="swiper_section">
+                    <div class="swiper swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#none" class="link_slide"><img src="./img/trend01.webp" class="img_g" alt=""></a>
+                          <button type="button" class="btn_slide">
+                            <span class="hash">#</span>
+                            <span class="name_keyword">버뮤다팬츠코디</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper_scrollbar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <div class="line"></div>
-          <button type="button" class="btn_category">
-            <div class="box_category">
-              <div class="tit_category">출석 체크</div>
-              <div class="txt_category">매일 적립금 10원 받기</div>
+          </section>
+          <div class="tab_feed">
+            <button type="button" class="btn_feed active">추천</button>
+            <button type="button" class="btn_feed">최신</button>
+          </div>
+          <div class="swiper swiper-container" style="padding:8px 0 8px 16px">
+            <ul class="list_category swiper-wrapper">
+              <li class="swiper-slide"><a href="#none" class="link_category"><i class="fa-solid fa-arrow-up-wide-short"></i></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">성별</span><span class="ico_comm ico_down"></span></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">스타일</span><span class="ico_comm ico_down"></span></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">키 · 몸무게</span><span class="ico_comm ico_down"></span></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">카테고리</span><span class="ico_comm ico_down"></span></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">색상</span><span class="ico_comm ico_down"></span></a></li>
+              <li class="swiper-slide"><a href="#none" class="link_category"><span class="name_category">브랜드</span><span class="ico_comm ico_down"></span></a></li>
+            </ul>
+            <div class="swiper_scrollbar"></div>
+          </div>
+          <div class="feed_container">
+            <div class="feed_wrapper">
+              <ul class="list_feed">
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#none" class="link_feed">
+                    <img src="./img/trend01.webp" class="img_g" alt="">
+                  </a>
+                  <a href="#none" class="link_profile">
+                    <div class="wrap_thumb"><img src="./img/profile.png" class="img_g" alt=""></div>
+                    <span class="user_name">봉봉이</span>
+                  </a>
+                  <a href="#none" class="link_cont">일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십</a>
+                  <div class="footer_feed">
+                    <button type="button" class="btn_like">
+                      <span class="screen_out">좋아요</span>
+                      <i class="ico_heart fa-regular fa-heart"></i>
+                      <span class="txt_btn">364</span>
+                    </button>
+                    <a href="#none" class="link_comment">
+                      <i class="fa-regular fa-message"></i>
+                      <span class="txt_btn">댓글달기</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="box_category">
-              <div class="tit_category">친구 초대</div>
-              <div class="txt_category">적립금 5천원 받기</div>
-            </div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">리서치 참여</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="box_category">
-              <div class="tit_category">체험단 신청/응모 내역</div>
-              <div class="txt_category">오늘 시작한 체험단 27개</div>
-            </div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">래플 응모 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">큐레이터 활동 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <div class="line"></div>
-          <button type="button" class="btn_category">
-            <div class="tit_category">무신사페이 관리</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">무신사 현대카드 할인 정보</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <div class="line"></div>
-          <button type="button" class="btn_category">
-            <div class="tit_category">고객센터</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">1:1 문의 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">상품 문의 내역</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <button type="button" class="btn_category">
-            <div class="tit_category">공지사항</div>
-            <div class="ico_comm ico_next"><span class="screen_out">이동</span></div>
-          </button>
-          <div class="line"></div>
+          </div>
         </div>
-        <footer class="doc-footer">
-          <button type="button" class="btn_logout">
-            <span class="txt_logout">로그아웃</span>
-          </button>
-        </footer>
         <nav class="wrap_nav">
           <h2 class="screen_out">내비게이션 메뉴</h2>
           <ul class="list_nav">
@@ -228,10 +365,30 @@
     </div>
   </div>
   <script>
-  $('.btn_top').on("click",function(){
-    $('html, body').animate({
-      scrollTop : 0
-    },100)
+  let mySwiper = new Swiper('.swiper-container', {
+    slidesPerView:'auto'
+  });
+
+  $(document).ready(function(){
+    $('.btn_like').click(function(){
+      if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $('.ico_heart').removeClass('fa-solid fa-heart');
+        $('.ico_heart').addClass('fa-regular fa-heart');
+        $('.ico_heart').css('color','#919191');
+      }else{
+        $(this).addClass('active');
+        $('.active .ico_heart').removeClass('fa-regular fa-heart');
+        $('.active .ico_heart').addClass('fa-solid fa-heart');
+        $('.active .ico_heart').css('color','#ff9900');
+      }
+    });
+
+    $('.btn_top').on("click",function(){
+      $('html, body').animate({
+        scrollTop : 0
+      },100)
+    });
   });
   </script>
 </body>
