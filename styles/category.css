@@ -31,7 +31,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .doc-header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
 .doc-header .btn_header .badge_cart{display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 
-.section-officer{position:fixed;top:63px;left:50%;z-index:100;width:100%;max-width:var(--max-width);background-color:#fff;transform:translateX(-50%)}
+.section-officer{overflow:hidden;position:fixed;top:63px;left:50%;z-index:100;width:100%;max-width:var(--max-width);background-color:#fff;transform:translateX(-50%)}
 .inner_section{display:flex;overflow:visible;padding:12px 0;white-space:nowrap}
 .inner_section::before,.inner_section::after{flex:0 0 15px;display:flex;content:''}
 .inner_section .link_officer{flex-shrink:0;width:52px;pointer-events:auto}
