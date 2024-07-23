@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="./js/category.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="is-web">
@@ -1136,13 +1137,13 @@
           <h2 class="screen_out">내비게이션 메뉴</h2>
           <ul class="list_nav">
             <li>
-              <a href="#none" class="link_nav">
+              <a href="./category.html" class="link_nav">
                 <i class="fa-solid fa-list"></i>
                 <span class="txt_nav">카테고리</span>
               </a>
             </li>
             <li>
-              <a href="#none" class="link_nav">
+              <a href="./snap.html" class="link_nav">
                 <i class="fa-regular fa-hashtag"></i>
                 <span class="txt_nav">스냅</span>
               </a>
@@ -1160,7 +1161,7 @@
               </a>
             </li>
             <li>
-              <a href="#none" class="link_nav">
+              <a href="./mypage-login.html" class="link_nav">
                 <i class="fa-regular fa-user"></i>
                 <span class="txt_nav">마이</span>
               </a>
@@ -1176,77 +1177,5 @@
       <a href="#none" class="inner_layout link_lately"><span class="screen_out">최근 본 상품 목록으로 이동</span></a>
     </div>
   </div>
-  <script>
-  $(document).ready(function(){
-    let ww = $(window).width();
-    let mySwiper = undefined;
-
-    // 해상도 530 미만에서만 swiper 작동
-    function initSwiper(){
-      if(ww < 530 && mySwiper == undefined){
-        mySwiper = new Swiper(".swiper-container",{
-          slidesPerView:'auto',
-          slidesOffsetAfter:30
-        });
-      }else if(ww >= 530 && mySwiper != undefined){
-        mySwiper.destroy();
-        mySwiper = undefined;
-      }
-    }
-    initSwiper();
-
-    // 좌측 카테고리 클릭 시 다른 선택되어 있던 버튼 on 해제
-    $('.btn_tablist').on("click", function(){
-      if($(this).hasClass('on')){
-        $('.btn_tablist').removeClass('on');
-      }else{
-        $('.btn_tablist').removeClass('on');
-        $(this).addClass('on');
-      }
-    });
-
-    // 좌측 카테고리 클릭 시 해당하는 카테고리의 서브 메뉴 Top 위치로 이동
-    function react(){
-      for(let i=0; i<14; i++){
-        let panelHeight = $('.article-panel').height();
-        $('.btn_tablist:nth-of-type('+i+')').on("click",function(){
-          $('html, body').animate({
-            scrollTop : panelHeight*(i-1)
-          }, 300)
-        });
-      }
-    }
-    react();
-
-    // 해상도 변경될 때마다 resize 시키기
-    $(window).resize(function(){
-      ww = $(window).width();
-      initSwiper();
-      react();
-    });
-
-    // 과부하 방지로 resize 후 새로고침
-    $(window).resize(function(){
-      document.location.reload();
-    });
-
-    // 새로고침 시간 설정
-    let delay = 300;
-    let timer = null;
-    $(window).on('resize', function(){
-      clearTimeout(timer);
-      timer = setTimeout(function(){
-      document.location.reload();
-      }, delay);
-    });
-
-    // .btn_top 버튼 클릭 시 최상단으로 이동
-    $('.btn_top').on("click",function(){
-      $('html, body').animate({
-        scrollTop : 0
-      }, 100)
-    });
-  });
-  </script>
 </body>
 </html>
