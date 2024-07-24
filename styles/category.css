@@ -15,7 +15,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .ico_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(../img/ico2.png) 0 0 no-repeat;background-size:70px 30px;text-indent:-9999px;vertical-align:top;}
 .ico_next{width:12px;height:23px;background-position:-40px 0;transform:scale(.5)}
 .ico_top{width:12px;height:23px;background-position:-55px 0;transform:rotateZ(90deg)}
-.inner_section::-webkit-scrollbar{display:none}
+.inner_section::-webkit-scrollbar,.article-left::-webkit-scrollbar{display:none}
 
 .container-doc{max-width:var(--max-width);min-width:var(--min-width);margin:0 auto;box-sizing:border-box}
 .inner_container{max-width:var(--max-width);min-width:var(--min-width);margin:auto}
