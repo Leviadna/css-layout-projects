@@ -73,3 +73,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
   .article-left{left:calc(50% - 300px)}
   .common_layout{right:50%;transform:translateX(290px)}
 }
+
+@media (max-width:480px){
+  .article-right .article-panel .list_submenu .txt_submenu{font-size:12px}
+}

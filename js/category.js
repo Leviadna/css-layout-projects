@@ -6,7 +6,7 @@ $(function(){
   // 해상도 530 미만에서만 swiper 작동
   function initSwiper(){
     if(ww < 530 && mySwiper == undefined){
-      mySwiper = new Swiper(".swiper-container",{
+      mySwiper = new Swiper('.swiper-container',{
         slidesPerView:'auto',
         slidesOffsetAfter:30,
       });
