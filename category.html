@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>무진장</title>
   <link rel="stylesheet" href="./styles/category.css">
+  <link rel="stylesheet" href="./styles/category-search.css">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
   <script src="./js/category.js"></script>
 </head>
 <body class="is-web">
@@ -34,65 +35,81 @@
               <span class="badge_cart">6</span>
             </button>
           </header>
-          <section class="section-officer swiper-container">
+          <nav class="wrap-tab swiper-container">
             <h3 class="screen_out">옵션 메뉴</h3>
-            <div class="inner_section swiper-wrapper">
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/05/24/37f9186c71a14c3981ef87f15e6c25d6.png" class="img_g" alt=""></div>
-                <span class="txt_officer">브랜드</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/09/19/bd6954d0796f4a62aa0fdb5f2d47c366.jpeg" class="img_g" alt=""></div>
-                <span class="txt_officer">스니커즈</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/5b5155ef54d742a59c93ec4df9479caf.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">아웃렛</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/e5169a609e014a429bdce52f8bc8cddd.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">뷰티</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/515ff7cdd88345699e1ba5d0e9ba9e7a.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">부띠끄</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/3e6e1ce9d0714c51bc61d097c07cdc34.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">키즈</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/ec8505bfae33411ea165e21977932750.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">플레이어</span>
-              </a>
-              <a href="#none" class="link_officer swiper-slide">
-                <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/01/12/5ca146334e0b4c39ab7fab720c745b7a.jpg" class="img_g" alt=""></div>
-                <span class="txt_officer">어스</span>
-              </a>
-            </div>
-          </section>
+            <ul class="list_tab swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/05/24/37f9186c71a14c3981ef87f15e6c25d6.png" class="img_g" alt=""></div>
+                  <span class="txt_tab">브랜드</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/09/19/bd6954d0796f4a62aa0fdb5f2d47c366.jpeg" class="img_g" alt=""></div>
+                  <span class="txt_tab">스니커즈</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/5b5155ef54d742a59c93ec4df9479caf.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">아웃렛</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/e5169a609e014a429bdce52f8bc8cddd.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">뷰티</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/515ff7cdd88345699e1ba5d0e9ba9e7a.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">부띠끄</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/3e6e1ce9d0714c51bc61d097c07cdc34.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">키즈</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2022/12/20/ec8505bfae33411ea165e21977932750.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">플레이어</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none" class="link_tab">
+                  <div class="thumb_g"><img src="https://image.msscdn.net/display/images/2023/01/12/5ca146334e0b4c39ab7fab720c745b7a.jpg" class="img_g" alt=""></div>
+                  <span class="txt_tab">어스</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
           <section class="section-category">
             <h3 class="screen_out">메뉴 목록</h3>
-            <article class="article-left" role="tablist">
-              <button type="button" class="btn_tablist on" role="tab">상의</button>
-              <button type="button" class="btn_tablist" role="tab">아우터</button>
-              <button type="button" class="btn_tablist" role="tab">바지</button>
-              <button type="button" class="btn_tablist" role="tab">원피스/스커트</button>
-              <button type="button" class="btn_tablist" role="tab">신발</button>
-              <button type="button" class="btn_tablist" role="tab">가방</button>
-              <button type="button" class="btn_tablist" role="tab">패션 소품</button>
-              <button type="button" class="btn_tablist" role="tab">언더웨어</button>
-              <button type="button" class="btn_tablist" role="tab">뷰티</button>
-              <button type="button" class="btn_tablist" role="tab">스포츠/레저</button>
-              <button type="button" class="btn_tablist" role="tab">라이프</button>
-              <button type="button" class="btn_tablist" role="tab">키즈</button>
-              <button type="button" class="btn_tablist" role="tab">브랜드</button>
-            </article>
-            <article class="article-right">
+            <ul class="list_snb">
+              <li><a href="#panel1" class="link_snb" aria-selected="true">상의</a></li>
+              <li><a href="#panel2" class="link_snb" aria-selected="false">아우터</a></li>
+              <li><a href="#panel3" class="link_snb" aria-selected="false">바지</a></li>
+              <li><a href="#panel4" class="link_snb" aria-selected="false">원피스/스커트</a></li>
+              <li><a href="#panel5" class="link_snb" aria-selected="false">신발</a></li>
+              <li><a href="#panel6" class="link_snb" aria-selected="false">가방</a></li>
+              <li><a href="#panel7" class="link_snb" aria-selected="false">패션 소품</a></li>
+              <li><a href="#panel8" class="link_snb" aria-selected="false">언더웨어</a></li>
+              <li><a href="#panel9" class="link_snb" aria-selected="false">뷰티</a></li>
+              <li><a href="#panel10" class="link_snb" aria-selected="false">스포츠/레저</a></li>
+              <li><a href="#panel11" class="link_snb" aria-selected="false">라이프</a></li>
+              <li><a href="#panel12" class="link_snb" aria-selected="false">키즈</a></li>
+              <li><a href="#panel13" class="link_snb" aria-selected="false">브랜드</a></li>
+            </ul>
+            <article class="article-panel">
               <h3 class="screen_out">메뉴 서브 리스트</h3>
-              <article class="article-panel">
+              <div id="panel1" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 상의</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">상의<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -168,11 +185,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel2" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 아우터</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">아우터<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -248,11 +265,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel3" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 바지</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">바지<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -328,11 +345,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel4" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 원피스/스커트</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">원피스/스커트<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -408,11 +425,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel5" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 신발</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">신발<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -488,11 +505,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel6" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 가방</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">가방<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -568,11 +585,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel7" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 패션 소품</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">패션 소품<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -648,11 +665,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel8" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 언더웨어</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">언더웨어<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -728,11 +745,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel9" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 뷰티</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">뷰티<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -808,11 +825,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel10" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 스포츠/레저</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">스포츠/레저<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -888,11 +905,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel11" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 라이프</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">라이프<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -968,11 +985,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel12" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 키즈</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">키즈<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -1048,11 +1065,11 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
-              <article class="article-panel">
+                </div>
+              </div>
+              <div id="panel13" class="wrap_panel">
                 <h3 class="screen_out">하위 메뉴 : 브랜드</h3>
-                <article class="inner-panel">
+                <div class="inner-panel">
                   <h3><a href="#none" class="link_category">브랜드<i class="chevron_right fa-solid fa-chevron-right"></i></a></h3>
                   <ul class="list_submenu">
                     <li>
@@ -1128,8 +1145,8 @@
                       </a>
                     </li>
                   </ul>
-                </article>
-              </article>
+                </div>
+              </div>
             </article>
           </section>
         </main>
@@ -1176,6 +1193,280 @@
       </button>
       <a href="#none" class="inner_layout link_lately"><span class="screen_out">최근 본 상품 목록으로 이동</span></a>
     </div>
+  </div>
+  <div id="searchModule">
+    <main class="search-doc">
+      <header class="search-header">
+        <div class="inner_header">
+          <input type="text" class="inp_search" placeholder="지금 필요한 락피쉬웨더웨어 레인부츠">
+          <button type="button" class="btn_txtbox">
+            <span class="screen_out">입력</span>
+          </button>
+          <button type="button" class="btn_search">
+            <span class="screen_out">검색</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button type="button" class="btn_header">취소</button>
+      </header>
+      <article class="search-article">
+        <header class="article-header">
+          <h2 class="tit_article">최근 검색어</h2>
+          <button type="button" class="btn_article">모두삭제</button>
+        </header>
+        <nav class="nav-search">
+          <ul class="list_record swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">더뮤지엄비지터</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">1507</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">카락터</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">애드오프</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">엑스톤즈</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">예스아이씨</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">스컬프터</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <a href="#none" class="link_record">
+                <span class="box_txt">
+                  <span class="txt_record">꼼파뇨</span>
+                </span>
+              </a>
+              <button type="button" class="btn_record">
+                <span class="screen_out">삭제하기</span>
+                <i class="ico_delete fa-solid fa-xmark"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </article>
+      <article class="search-article">
+        <header class="article-header">
+          <h2 class="tit_article">인기 검색어</h2>
+          <button type="button" class="btn_article">전체보기
+            <i class="chevron_right fa-solid fa-chevron-right"></i>
+          </button>
+        </header>
+        <ol class="list_ranking">
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">반팔</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">버뮤다팬츠</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">아디다스</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">반바지</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">모자</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">백팩</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">나이키</span>
+              <span class="box_ico">
+                <span class="screen_out">순위 유지</span>
+                <span class="ico_ranking keep"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">나시</span>
+              <span class="box_ico">
+                <span class="screen_out">1 순위 상승</span>
+                <span class="ico_ranking up"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">양말</span>
+              <span class="box_ico">
+                <span class="screen_out">1 순위 상승</span>
+                <span class="ico_ranking up"></span>
+              </span>
+            </a>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">스투시</span>
+              <span class="box_ico">
+                <span class="screen_out">2 순위 하락</span>
+                <span class="ico_ranking down"></span>
+              </span>
+            </a>
+          </li>
+        </ol>
+      </article>
+      <article class="search-article">
+        <header class="article-header">
+          <h2 class="tit_article">급상승 검색어</h2>
+          <span class="txt_realtime">07.30 15:00 기준</span>
+        </header>
+        <ol class="list_ranking">
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">오드타입</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">민소매</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">수모</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">브라탑</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">마르디 메크르디</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">보스턴백</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">에어팟 케이스</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">널디</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">데우스</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_ranking">
+              <span class="txt_ranking">무지티</span>
+            </a>
+          </li>
+        </ol>
+      </article>
+    </main>
   </div>
 </body>
 </html>

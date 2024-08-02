@@ -30,7 +30,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .inner_container:after{position:fixed;top:0;bottom:0;right:50%;z-index:1000;width:1px;background-color:#8a8a8a;transform:translateX(300px);opacity:.1;content:''}
 .doc-header{height:50px}
 .doc-header .wrap_header{display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
-.doc-header .wrap_header .tit_page{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;width:50px;font-size:18px;transform:translateX(-50%)}
+.doc-header .wrap_header .tit_page{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;width:50px;font-weight:500;font-size:16px;transform:translateX(-50%)}
 .doc-header .wrap_header .btn_header{position:relative;padding:8px}
 .doc-header .wrap_header .btn_header i{font-size:20px}
 .doc-header .wrap_header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
