@@ -10,9 +10,9 @@ a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-color:transparent;cursor:pointer}
 .img_g{display:inline-block;width:100%;vertical-align:top}
-.thumb_g{overflow:hidden;position:relative;border-radius:16px}
+.thumb_g{overflow:hidden;width:100%;border-radius:16px}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
-.ico_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(../img/ico2.png) 0 0 no-repeat;background-size:70px 30px;text-indent:-9999px;vertical-align:top;}
+.ico_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(../img/ico2.png) 0 0 no-repeat;background-size:70px 30px;text-indent:-9999px;vertical-align:top}
 .ico_next{width:12px;height:23px;background-position:-40px 0;transform:scale(.5)}
 .ico_top{width:12px;height:23px;background-position:-55px 0;transform:rotateZ(90deg)}
 .list_tab::-webkit-scrollbar,.list_snb::-webkit-scrollbar{display:none}
@@ -31,6 +31,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .doc-header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
 .doc-header .btn_header .badge_cart{display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 
+.main-doc .swiper{position:fixed}
 .wrap-tab{overflow:hidden;position:fixed;top:63px;left:50%;z-index:100;width:100%;max-width:var(--max-width);background-color:#fff;transform:translateX(-50%)}
 .list_tab{display:flex;overflow:visible;padding:12px 0;white-space:nowrap}
 .list_tab::before,.list_tab::after{flex:0 0 15px;display:flex;content:''}
