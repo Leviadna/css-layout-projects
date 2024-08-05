@@ -10,7 +10,7 @@ a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-color:transparent;cursor:pointer}
 .img_g{display:inline-block;width:100%;vertical-align:top}
-.thumb_g{overflow:hidden;width:100%;border-radius:16px}
+.thumb_g{overflow:hidden;position:relative}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 .ico_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(../img/ico2.png) 0 0 no-repeat;background-size:70px 30px;text-indent:-9999px;vertical-align:top;}
 .ico_next{width:12px;height:23px;background-position:-40px 0;transform:scale(.5)}
@@ -51,6 +51,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .category-header .list_service li{display:inline-block;margin-left:5px}
 .category-header .list_service .link_service{padding:2px 5px;font-weight:bold;font-size:16px}
 
+.swiper-container{overflow:hidden}
 .list_category{display:flex;overflow:visible;padding:21px 0 15px;white-space:nowrap}
 .list_category li{width:auto;margin-right:6px}
 .list_category .link_category{padding:5px 10px;border:1px solid #e5e5e5;color:#bababa;font-size:15px;border-radius:5px}
@@ -70,6 +71,8 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .article-goods .list_goods{overflow:hidden}
 .article-goods .list_goods li{float:left;position:relative;width:calc(100% / 3)}
 .article-goods .list_goods .link_goods{display:block}
+.article-goods .list_goods .link_goods .thumb_g::after{display:block;padding-bottom:calc(120%);background-color:var(--bg-color);content:''}
+.article-goods .list_goods .link_goods .img_goods{position:absolute;inset:0;width:100%;height:100%;color:transparent;object-fit:contain;mix-blend-mode:multiply}
 .article-goods .list_goods .link_goods .group_information{height:130px;padding:14px 10px 0;font-size:12px;box-sizing:border-box}
 .article-goods .list_goods .link_goods .txt_brand{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;text-overflow:ellipsis}
 .article-goods .list_goods .link_goods .txt_goodsname{display:block;overflow:hidden;width:100%;max-height:36px;margin:2px 0 5px;font-weight:bold;line-height:18px;word-break:break-all}

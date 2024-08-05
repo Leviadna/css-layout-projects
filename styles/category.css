@@ -10,7 +10,7 @@ a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-color:transparent;cursor:pointer}
 .img_g{display:inline-block;width:100%;vertical-align:top}
-.thumb_g{overflow:hidden;width:100%;border-radius:16px}
+.thumb_g{overflow:hidden;position:relative;border-radius:16px}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
 .ico_comm{display:inline-block;overflow:hidden;font-size:0;line-height:0;background:url(../img/ico2.png) 0 0 no-repeat;background-size:70px 30px;text-indent:-9999px;vertical-align:top;}
 .ico_next{width:12px;height:23px;background-position:-40px 0;transform:scale(.5)}

@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>무진장</title>
-  <link rel="stylesheet" href="./styles/like.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
-  <script src="./js/like.js"></script>
+  <script src="./js/main.js"></script>
 </head>
 <body class="is-web">
   <div class="container-doc">
@@ -27,8 +27,12 @@
                 <span class="badge_new">99+</span>
               </button>
             </div>
-            <h2 class="tit_page">좋아요</h2>
+            <h2 class="tit_page">MUJINJANG</h2>
             <div class="box_header">
+              <button type="button" class="btn_header">
+                <span class="screen_out">검색</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
               <button type="button" class="btn_header">
                 <span class="screen_out">카트</span>
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -37,447 +41,27 @@
             </div>
           </div>
         </header>
-        <nav class="wrap_tab">
-          <h3 class="screen_out">좋아요 분류</h3>
-          <ul class="list_tab">
-            <li><a href="#none" class="link_tab" aria-selected="true">상품</a></li>
-            <li><a href="#none" class="link_tab" aria-selected="false">브랜드</a></li>
-            <li><a href="#none" class="link_tab" aria-selected="false">스타일</a></li>
-          </ul>
-        </nav>
-        <div class="wrap_contents">
-          <section class="section-banner">
-            <article class="article-banner">
-              <button type="button" class="btn_banner">
-                <span class="txt_banner">내가 좋아할만한</span>
-                <div class="box_banner">
-                  <span class="tit_banner">추천 상품</span>
-                  <span class="ico_comm ico_next"></span>
-                </div>
-              </button>
-            </article>
-            <article class="article-banner">
-              <button type="button" class="btn_banner">
-                <span class="txt_banner">브랜드 좋아요하고</span>
-                <div class="box_banner">
-                  <span class="tit_banner">상품 체험하기</span>
-                  <span class="ico_comm ico_next"></span>
-                </div>
-              </button>
-            </article>
-            <article class="article-banner">
-              <button type="button" class="btn_banner">
-                <span class="txt_banner">좋아요하고</span>
-                <div class="box_banner">
-                  <span class="tit_banner">적립금 받기</span>
-                  <span class="ico_comm ico_next"></span>
-                </div>
-              </button>
-            </article>
-          </section>
-          <section class="section-category">
-            <header class="category-header">
-              <h3 class="txt_quantity">전체<strong class="txt_total">542</strong>개</h3>
-              <ul class="list_service">
-                <li><a href="#none" class="link_service">내폴더</a></li>
-                <li><a href="#none" class="link_service">공유</a></li>
-                <li><a href="#none" class="link_service">편집</a></li>
-              </ul>
-            </header>
-            <div class="swiper-container">
-              <ul class="list_category swiper-wrapper">
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="true">전체</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">가방</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">디지털/테크</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">리빙</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">모자</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">바지</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">뷰티</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">상의</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">홈웨어</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">스니커즈</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">스커트</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">스포츠/레저</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">시계</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">신발</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">아우터</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">액세서리</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">양말</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">여성 가방</a></li>
-                <li class="swiper-slide"><a href="#none" class="link_category" aria-selected="false">주얼리</a></li>
+        <main class="main-doc">
+          <nav class="nav-top">
+            <ul class="list_top">
+              <li><a href="#none" class="link_top" aria-selected="false">GO 무진장</a></li>
+              <li><a href="#none" class="link_top" aria-selected="true">추천</a></li>
+              <li><a href="#none" class="link_top" aria-selected="false">뷰티</a></li>
+              <li><a href="#none" class="link_top" aria-selected="false">랭킹</a></li>
+              <li><a href="#none" class="link_top" aria-selected="false"><span class="txt_timesale">매일 14시</span>세일</a></li>
+              <li><a href="#none" class="link_top" aria-selected="false">스타일</a></li>
+              <li><a href="#none" class="link_top" aria-selected="false">이벤트</a></li>
+            </ul>
+          </nav>
+          <section class="section-main">
+            <h3 class="screen_out">메인 배너 영역</h3>
+            <div class="cont_banner swiper-container">
+              <ul class="list_banner swiper-wrapper">
+                <li class="swiper-slide"><a href="#none" class="link_banner"></a></li>
               </ul>
             </div>
           </section>
-          <section class="section-filter">
-            <article class="article-filter">
-              <div class="box_btnbox">
-                <button id="filterButton1" class="btn_filter">
-                  <label for="filterButton1" class="lab_btn"></label>
-                  <span class="txt_filter">세일</span>
-                </button>
-                <button id="filterButton2" class="btn_filter">
-                  <label for="filterButton2" class="lab_btn"></label>
-                  <span class="txt_filter">품절제외</span>
-                </button>
-              </div>
-              <button class="btn_filter">
-                <span class="txt_filter">담은순</span>
-                <span class="ico_comm ico_down"></span>
-              </button>
-            </article>
-          </section>
-          <section class="section-goods">
-            <article class="article-goods">
-              <ul class="list_goods">
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240112/3793202/3793202_17071229164206_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">아웃스탠딩</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">RIPSTOP 3LAYER COMBAT PARKA_BRICK</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">101,400원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">40%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">169,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240214/3867231/3867231_17083053067373_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">본바트</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">Big Cargo Wooven Trousers (Charcoal)</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">70,800원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">40%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">118,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240710/4242477/4242477_17205942025224_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">에잇세컨즈</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">이글 그래픽 프린트 반팔 티셔츠 네이비 (454742LQDR)</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">34,900원</span>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20190424/1026419/1026419_1_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">핍스</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">essential messenger bag_light edit(light_burgundy)</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">45,000원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">34%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">68,000원</del>
-                        <div class="txt_coupon">쿠폰</div>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20230721/3419154/3419154_16916398978161_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">스모크라이즈</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">LASER MARBLING JEANS_MILKY BLUE</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">58,000원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">60%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">145,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240612/4192607/4192607_17181896862070_big.jpg?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">디쏘에이치</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">썬더 로고 하프 팬츠 블랙 카모</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">79,200원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">20%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">99,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-                <li>
-                  <a href="#none" class="link_goods">
-                    <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240417/4064531/4064531_17147241579946_big.png?w=260" class="img_g" alt="">
-                    <div class="group_information">
-                      <span class="screen_out">브랜드 이름</span>
-                      <span class="txt_brand">로어링라드</span>
-                      <span class="screen_out">상품 이름</span>
-                      <span class="txt_goodsname">레이싱 버뮤다 데님 팬츠 더티 화이트</span>
-                      <div class="box_price">
-                        <span class="screen_out">현재가</span>
-                        <span class="txt_currentprice">96,600원</span>
-                        <span class="screen_out">할인율</span>
-                        <span class="txt_discount">30%</span>
-                      </div>
-                      <div class="box_price">
-                        <span class="screen_out">원가</span>
-                        <del class="txt_goodsprice">138,000원</del>
-                      </div>
-                    </div>
-                  </a>
-                  <button type="button" class="btn_like">
-                    <span class="screen_out">좋아요 삭제</span>
-                    <i class="ico_heart fa-solid fa-heart"></i>
-                  </button>
-                </li>
-              </ul>
-            </article>
-          </section>
-        </div>
+        </main>
         <nav class="wrap_nav">
           <h2 class="screen_out">내비게이션 메뉴</h2>
           <ul class="list_nav">
@@ -494,13 +78,13 @@
               </a>
             </li>
             <li>
-              <a href="#none" class="link_nav">
+              <a href="./index.html" class="link_nav">
                 <i class="fa-solid fa-house"></i>
                 <span class="txt_nav">홈</span>
               </a>
             </li>
             <li>
-              <a href="#none" class="link_nav">
+              <a href="./like.html" class="link_nav">
                 <i class="fa-regular fa-heart"></i>
                 <span class="txt_nav">좋아요</span>
               </a>
