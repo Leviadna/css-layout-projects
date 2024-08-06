@@ -23,12 +23,12 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .inner_container:before{position:fixed;top:0;bottom:0;z-index:1000;width:1px;background-color:#8a8a8a;opacity:.1;content:''}
 .inner_container:after{position:fixed;top:0;bottom:0;right:50%;z-index:1000;width:1px;background-color:#8a8a8a;transform:translateX(300px);opacity:.1;content:''}
 .doc-header{height:50px}
-.doc-header .wrap_header{display:flex;align-items:center;justify-content:space-between;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
-.doc-header .wrap_header .tit_page{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;width:50px;font-weight:500;font-size:16px;transform:translateX(-50%)}
+.doc-header .wrap_header{display:flex;justify-content:space-between;align-items:center;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
+.doc-header .wrap_header .tit_page{display:flex;justify-content:center;align-items:center;position:absolute;left:50%;width:50px;font-weight:500;font-size:16px;transform:translateX(-50%)}
 .doc-header .wrap_header .btn_header{position:relative;padding:8px}
 .doc-header .wrap_header .btn_header i{font-size:20px}
 .doc-header .wrap_header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
-.doc-header .wrap_header .btn_header .badge_cart{display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
+.doc-header .wrap_header .btn_header .badge_cart{display:flex;justify-content:center;align-items:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 .wrap_tab{position:sticky;top:-1px;z-index:500;width:100%;padding:10px 16px;background-color:#fff;box-sizing:border-box}
 .wrap_tab .list_tab{display:flex;border-radius:5px}
 .wrap_tab .list_tab li{width:100%;text-align:center}
@@ -44,7 +44,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .article-banner .btn_banner .box_banner .tit_banner{margin-right:10px;font-weight:bold;font-size:14px;line-height:21px}
 
 .section-category{padding:10px 16px}
-.category-header{display:flex;align-items:center;justify-content:space-between}
+.category-header{display:flex;justify-content:space-between;align-items:center}
 .category-header .txt_quantity{font-weight:400;font-size:14px}
 .category-header .txt_total{margin-left:4px}
 .category-header .list_service{padding-right:2px}
@@ -58,13 +58,13 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .list_category .link_category[aria-selected="true"]{border-color:#000;color:#000}
 
 .section-filter{padding:0 16px}
-.article-filter{display:flex;align-items:center;justify-content:space-between;height:50px}
+.article-filter{display:flex;justify-content:space-between;align-items:center;height:50px}
 .article-filter .box_btnbox{display:flex;gap:12px}
-.article-filter .btn_filter{position:relative;line-height:18px}
-.article-filter .btn_filter .lab_btn{display:inline-block;position:relative;width:20px;height:20px;border:1px solid #ccc;border-radius:50%;vertical-align:bottom;background-color:#e5e5e5}
+.article-filter .btn_filter{display:flex;align-items:center;position:relative;line-height:18px}
+.article-filter .btn_filter .lab_btn{position:relative;width:20px;height:20px;border:1px solid #ccc;border-radius:50%;background-color:#e5e5e5}
 .article-filter .btn_filter.active .lab_btn{border:1px solid #0078ff;background-color:#0078ff}
 .article-filter .btn_filter.active .lab_btn::after{position:absolute;top:5px;left:3px;width:60%;height:25%;border:2px solid var(--bg-color);border-top:0;border-right:0;transform:rotateZ(-45deg);content:''}
-.article-filter .btn_filter .txt_filter{margin-left:4px;font-size:16px}
+.article-filter .btn_filter .txt_filter{margin-left:8px;font-size:16px}
 
 .section-goods{margin-top:15px}
 .article-goods{width:100%}
@@ -76,11 +76,11 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .article-goods .list_goods .link_goods .group_information{height:130px;padding:14px 10px 0;font-size:12px;box-sizing:border-box}
 .article-goods .list_goods .link_goods .txt_brand{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;text-overflow:ellipsis}
 .article-goods .list_goods .link_goods .txt_goodsname{display:block;overflow:hidden;width:100%;max-height:36px;margin:2px 0 5px;font-weight:bold;line-height:18px;word-break:break-all}
-.article-goods .list_goods .link_goods .box_price{display:flex;align-items:center;justify-content:space-between;font-weight:500}
+.article-goods .list_goods .link_goods .box_price{display:flex;justify-content:space-between;align-items:center;font-weight:500}
 .article-goods .list_goods .link_goods .txt_currentprice{white-space:nowrap}
 .article-goods .list_goods .link_goods .txt_discount{color:#f00010}
 .article-goods .list_goods .link_goods .txt_goodsprice{color:#8a8a8a}
-.article-goods .list_goods .link_goods .txt_coupon{display:flex;align-items:center;justify-content:center;width:26px;height:18px;line-height:16px;color:#fff;border-radius:2px;background-color:#0078ff}
+.article-goods .list_goods .link_goods .txt_coupon{display:flex;justify-content:center;align-items:center;width:26px;height:18px;line-height:16px;color:#fff;border-radius:2px;background-color:#0078ff}
 .article-goods .list_goods .btn_like{position:absolute;top:55%;right:10px;font-size:20px;color:#f00010}
 
 .wrap_nav{position:relative;height:calc(env(safe-area-inset-bottom) + 60px)}

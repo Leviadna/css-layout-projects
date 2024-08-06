@@ -29,8 +29,8 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .inner_container:before{position:fixed;top:0;bottom:0;z-index:1000;width:1px;background-color:#8a8a8a;opacity:.1;content:''}
 .inner_container:after{position:fixed;top:0;bottom:0;right:50%;z-index:1000;width:1px;background-color:#8a8a8a;transform:translateX(300px);opacity:.1;content:''}
 .doc-header{height:50px}
-.doc-header .wrap_header{display:flex;align-items:center;justify-content:space-between;position:fixed;top:0;left:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
-.doc-header .wrap_header .tit_page{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;width:50px;font-weight:500;font-size:16px;transform:translateX(-50%)}
+.doc-header .wrap_header{display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;left:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
+.doc-header .wrap_header .tit_page{display:flex;justify-content:center;align-items:center;position:absolute;left:50%;width:50px;font-weight:500;font-size:16px;transform:translateX(-50%)}
 .doc-header .wrap_header .btn_header{position:relative;padding:8px}
 .doc-header .wrap_header .btn_header i{font-size:20px}
 .doc-header .wrap_header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
@@ -73,7 +73,7 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 
 .feed_container{margin:0 16px;padding:12px 0 calc(env(safe-area-inset-bottom) + 80px)}
 .feed_wrapper{overflow:visible;position:relative}
-.list_feed{display:flex;justify-content:space-between;flex-wrap:wrap}
+.list_feed{display:flex;flex-wrap:wrap;justify-content:space-between}
 .list_feed li{width:calc(50% - 2.5px);padding-bottom:20px}
 .list_feed .link_feed{display:block}
 .list_feed .link_profile{display:flex;align-items:center;margin:10px 5px}
@@ -84,12 +84,12 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .list_feed .footer_feed{display:flex;padding:11px 0 0 8px}
 .list_feed .footer_feed .btn_like{margin-right:10px;padding:2px;color:#919191}
 .list_feed .footer_feed .link_comment{margin-right:10px;padding:2px;font-size:13px;color:#919191}
-.list_feed .footer_feed .txt_btn{display:inline-block;margin-left:2px;font-size:12px;line-height:18px}
+.list_feed .footer_feed .txt_btn{display:inline-block;margin-left:2px;font-size:12px;line-height:18px;vertical-align:top}
 
 .wrap_nav{position:relative;height:calc(env(safe-area-inset-bottom) + 60px)}
 .wrap_nav .list_nav{display:flex;position:fixed;left:0;bottom:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);margin:auto;padding-bottom:calc(env(safe-area-inset-bottom) + 0px);background-color:#000;box-sizing:border-box}
 .wrap_nav .list_nav li{width:20%}
-.wrap_nav .list_nav .link_nav{display:flex;align-items:center;flex-direction:column;padding:10px 0;color:#fff}
+.wrap_nav .list_nav .link_nav{display:flex;flex-direction:column;align-items:center;padding:10px 0;color:#fff}
 .wrap_nav .list_nav .link_nav i{margin-bottom:5px;font-size:17px}
 .wrap_nav .list_nav .link_nav .txt_nav{font-size:12px}
 

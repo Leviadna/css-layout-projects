@@ -9,6 +9,7 @@ a:visited{color:#000}
 a:active,a:hover{text-decoration:none}
 a:active{background-color:transparent}
 button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-color:transparent;cursor:pointer}
+figure{margin:0}
 .img_g{display:inline-block;width:100%;vertical-align:top}
 .thumb_g{overflow:hidden;position:relative}
 .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
@@ -22,28 +23,50 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .inner_container:before{position:fixed;top:0;bottom:0;z-index:1000;width:1px;background-color:#8a8a8a;opacity:.1;content:''}
 .inner_container:after{position:fixed;top:0;bottom:0;right:50%;z-index:1000;width:1px;background-color:#8a8a8a;transform:translateX(300px);opacity:.1;content:''}
 .doc-header{height:50px}
-.doc-header .wrap_header{display:flex;align-items:center;justify-content:space-between;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
-.doc-header .wrap_header .tit_page{display:flex;align-items:center;justify-content:center;position:absolute;left:50%;font-weight:500;font-size:22px;transform:translateX(-50%);user-select:none}
+.doc-header .wrap_header{display:flex;justify-content:space-between;align-items:center;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:#fff;box-sizing:border-box}
+.doc-header .wrap_header .tit_page{display:flex;justify-content:center;align-items:center;position:absolute;left:50%;font-weight:500;font-size:22px;transform:translateX(-50%);user-select:none}
 .doc-header .wrap_header .btn_header{position:relative;padding:8px}
 .doc-header .wrap_header .btn_header i{font-size:20px}
 .doc-header .wrap_header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
-.doc-header .wrap_header .btn_header .badge_cart{display:flex;align-items:center;justify-content:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
+.doc-header .wrap_header .btn_header .badge_cart{display:flex;justify-content:center;align-items:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 
 .main-doc{max-width:var(--max-width);min-width:var(--min-width);padding-bottom:82px}
-.nav-top{padding:5px 16px}
+.nav-top{padding:5px 16px 0}
 .list_top{display:flex;justify-content:space-around}
-.list_top .link_top{display:block;position:relative;padding:12px 9px;font-size:16px;color:#b6b6b6}
+.list_top li{width:auto}
+.list_top .link_top{display:block;position:relative;padding:12px 9px;color:#b6b6b6}
 .list_top li:first-child .link_top{color:#4bb8f5}
 .list_top .link_top[aria-selected="true"]{font-weight:bold;color:#000}
 .list_top .link_top[aria-selected="true"]::after{position:absolute;left:20%;bottom:0;right:20%;height:2px;background-color:#000;content:''}
 .list_top li:first-child .link_top[aria-selected="true"]::after{left:10%;right:10%;background-color:#4bb8f5}
-.list_top .link_top .txt_timesale{display:block;position:absolute;top:4px;left:4px;font-weight:600;font-size:10px;color:#b3b3b3;white-space:nowrap}
+.list_top .link_top .txt_timesale{display:block;position:absolute;top:4px;left:2px;font-weight:600;font-size:10px;color:#b3b3b3;white-space:nowrap}
 .list_top .link_top[aria-selected="true"] .txt_timesale{font-weight:bold;color:#000}
+
+.list_banner{display:flex;position:relative;width:100%;height:100%}
+.list_banner .link_banner{display:block;position:relative;width:100%;padding-bottom:100%}
+.list_banner .link_banner::after{position:absolute;top:0;left:0;z-index:50;width:100%;height:100%;background:linear-gradient(rgba(0,0,0,0)50%,rgba(0,0,0,0.2)100%);content:''}
+.list_banner .link_banner .fig_banner{position:absolute;inset:0}
+.list_banner .link_banner .caption_banner{position:absolute;left:20px;bottom:28px;z-index:100;width:calc(100% - 84px);color:var(--bg-color)}
+.list_banner .link_banner .caption_banner .tit_banner{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-weight:500;font-size:24px;line-height:32px;white-space:pre-wrap;text-overflow:ellipsis;overflow-wrap:break-word}
+.list_banner .link_banner .caption_banner .txt_banner{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px;line-height:21px;text-overflow:ellipsis;overflow-wrap:break-word}
+.paging_banner{display:flex;justify-content:center;align-items:center;position:absolute;right:20px;bottom:28px;z-index:100;padding:5px;color:var(--bg-color);cursor:pointer}
+.paging_banner .box_paging{display:flex;justify-content:center;flex:1 1 0%;font-weight:500;font-size:12px;line-height:18px;color:var(--bg-color)}
+.paging_banner .box_paging .swiper-pagination-current{margin-right:2px}
+.paging_banner .box_paging .swiper-pagination-total{margin-left:2px}
+.paging_banner .ico_more{font-size:10px;color:#b6b6b6}
+
+.section-menu{margin-top:20px}
+.box_tabmenu{overflow:hidden;padding:0 16px;box-sizing:border-box;white-space:nowrap}
+.list_tabmenu{display:flex}
+.list_tabmenu li{width:auto;margin-right:3%}
+.list_tabmenu .link_tabmenu{display:block;width:66px;margin-bottom:15px;text-align:center}
+.list_tabmenu .link_tabmenu .thumb_g{border-radius:12px}
+.list_tabmenu .link_tabmenu .txt_tabmenu{display:block;overflow:hidden;margin-top:5px;white-space:nowrap;text-overflow:ellipsis}
 
 .wrap_nav{position:relative;height:calc(env(safe-area-inset-bottom) + 60px)}
 .wrap_nav .list_nav{display:flex;position:fixed;left:0;bottom:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);margin:auto;padding-bottom:calc(env(safe-area-inset-bottom) + 0px);background-color:#000;box-sizing:border-box}
 .wrap_nav .list_nav li{width:20%}
-.wrap_nav .list_nav .link_nav{display:flex;align-items:center;flex-direction:column;padding:10px 0;color:#fff}
+.wrap_nav .list_nav .link_nav{display:flex;flex-direction:column;align-items:center;padding:10px 0;color:#fff}
 .wrap_nav .list_nav .link_nav i{margin-bottom:5px;font-size:17px}
 .wrap_nav .list_nav .link_nav .txt_nav{font-size:12px}
 
