@@ -31,14 +31,11 @@ button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-col
 .doc-header .btn_header .badge_new{position:absolute;left:0;bottom:0;right:0;padding:3px 5px;font-size:11px;color:#fff;border-radius:10px;background-color:#0078ff}
 .doc-header .btn_header .badge_cart{display:flex;justify-content:center;align-items:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 
-.main-doc .swiper{position:fixed}
-.wrap-tab{overflow:hidden;position:fixed;top:63px;left:50%;z-index:100;width:100%;max-width:var(--max-width);background-color:#fff;transform:translateX(-50%)}
-.list_tab{display:flex;overflow:visible;padding:12px 0;white-space:nowrap}
-.list_tab::before,.list_tab::after{flex:0 0 15px;display:flex;content:''}
-.list_tab li{flex-shrink:0;width:52px;pointer-events:auto}
-.list_tab li+li{margin-left:12px}
-.list_tab .link_tab{display:block;font-size:13px;letter-spacing:0.02em;text-align:center}
-.list_tab .link_tab .txt_tab{display:block;padding-top:5px;white-space:nowrap;text-overflow:ellipsis}
+.wrap-tab{overflow:hidden;position:fixed;top:63px;left:50%;z-index:100;width:100%;max-width:var(--max-width);padding:12px 16px;background-color:#fff;box-sizing:border-box;transform:translateX(-50%)}
+.wrap-tab .list_tab{display:flex}
+.wrap-tab .list_tab li{flex-shrink:0;width:52px;pointer-events:auto}
+.wrap-tab .list_tab .link_tab{display:block;font-size:13px;letter-spacing:0.02em;text-align:center}
+.wrap-tab .list_tab .link_tab .txt_tab{display:block;padding-top:5px;white-space:nowrap;text-overflow:ellipsis}
 
 .section-category{display:flex;justify-content:flex-end;align-items:flex-start;overflow:hidden;position:relative;margin-top:165px}
 .list_snb{flex:0 0 117px;overflow:hidden auto;position:fixed;top:165px;left:0;bottom:0;width:117px;min-height:calc(1vh * 100 - 225px);padding-bottom:calc(env(safe-area-inset-bottom) + 115px);background-color:#fff;box-sizing:border-box;}

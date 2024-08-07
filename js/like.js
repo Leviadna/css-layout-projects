@@ -23,7 +23,7 @@ $(()=>{
     }
   });
 
-  new Swiper('.swiper-container', {
+  new Swiper('.swiper-category', {
     slidesPerView:'auto'
   });
 

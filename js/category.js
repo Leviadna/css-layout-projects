@@ -1,21 +1,10 @@
 $(()=>{
   const $link = $('.link_snb');
-  let ww = $(window).width();
-  let mySwiper = undefined;
 
-  // 해상도 530 미만에서만 swiper 작동
-  function initSwiper(){
-    if(ww < 530 && mySwiper == undefined){
-      mySwiper = new Swiper('.swiper-container',{
-        slidesPerView:'auto',
-        slidesOffsetAfter:30,
-      });
-    }else if(ww >= 530 && mySwiper != undefined){
-      mySwiper.destroy();
-      mySwiper = undefined;
-    }
-  }
-  initSwiper();
+  new Swiper('.wrap-tab', {
+    slidesPerView:'auto',
+    spaceBetween:12
+  });
   
   $(window).on('scroll', function(){
     var _sct = $(window).scrollTop();

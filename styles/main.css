@@ -32,7 +32,7 @@ figure{margin:0}
 .doc-header .wrap_header .btn_header .badge_cart{display:flex;justify-content:center;align-items:center;position:absolute;bottom:0;right:0;width:10px;height:10px;padding:4px;font-size:11px;color:#fff;border-radius:50%;background-color:#0078ff}
 
 .main-doc{max-width:var(--max-width);min-width:var(--min-width);padding-bottom:82px}
-.nav-top{padding:5px 16px 0}
+.nav-top{overflow:hidden;padding:5px 16px 0}
 .list_top{display:flex;justify-content:space-around}
 .list_top li{width:auto}
 .list_top .link_top{display:block;position:relative;padding:12px 9px;color:#b6b6b6}
