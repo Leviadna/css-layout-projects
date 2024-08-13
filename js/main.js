@@ -75,6 +75,7 @@ $(()=>{
     if($(this).next().hasClass('on')){
       $(this).next().removeClass('on');
     }else{
+      $('.btn_foot').next().removeClass('on');
       $(this).next().addClass('on');
     }
   });
