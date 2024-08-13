@@ -58,7 +58,7 @@ $(()=>{
       $(this).removeClass('active');
       $(this).children('.ico_heart').removeClass('fa-solid fa-heart');
       $(this).children('.ico_heart').addClass('fa-regular fa-heart');
-      $(this).children('.ico_heart').css('color','#000');
+      $(this).children('.ico_heart').css('color','#fff');
     }else{
       $(this).addClass('active');
       $(this).children('.ico_heart').removeClass('fa-regular fa-heart');
@@ -67,7 +67,7 @@ $(()=>{
     }
   });
 
-  $('#countdown').countdown('2024/08/15', function(event) {
+  $('#countdown').countdown('2024/08/17', function(event) {
     $(this).html(event.strftime('%I : %M : %S'));
   });
 
