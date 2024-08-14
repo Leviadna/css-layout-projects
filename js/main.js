@@ -67,10 +67,12 @@ $(()=>{
     }
   });
 
+  // 특가 할인 판매 카운트다운
   $('#countdown').countdown('2024/08/17', function(event) {
     $(this).html(event.strftime('%I : %M : %S'));
   });
 
+  // 푸터 영역 상세보기 ON / OFF
   $('.btn_foot').click(function(){
     if($(this).next().hasClass('on')){
       $(this).next().removeClass('on');

@@ -1,0 +1,50 @@
+@charset "utf-8";
+:root{--max-width:600px;--min-width:320px;--bg-color:#f5f5f5;}
+html,body{height:100%}
+body{overflow:auto;font-size:14px;font-family:"Pretendard Variable",Pretendard,Apple SD Gothic Neo,sans-serif;line-height:1.5}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+ul,li{list-style:none}
+a{color:#000;text-decoration:none}
+a:visited{color:#000}
+a:active,a:hover{text-decoration:none}
+a:active{background-color:transparent}
+button{border:0 none;font-family:"Pretendard Variable",Pretendard;background-color:transparent;cursor:pointer}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
+.container-doc{max-width:var(--max-width);min-width:var(--min-width);margin:0 auto;box-sizing:border-box}
+.inner_container{max-width:var(--max-width);min-width:var(--min-width);margin:auto}
+.inner_container:before{position:fixed;top:0;bottom:0;z-index:1000;width:1px;background-color:#8a8a8a;opacity:.1;content:''}
+.inner_container:after{position:fixed;top:0;bottom:0;right:50%;z-index:1000;width:1px;background-color:#8a8a8a;transform:translateX(300px);opacity:.1;content:''}
+.doc-header{height:50px}
+.doc-header .wrap_header{display:flex;align-items:center;position:relative;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:var(--bg-color);box-sizing:border-box}
+.doc-header .wrap_header .btn_header{padding:8px}
+.doc-header .wrap_header .tit_page{font-weight:500;font-size:16px}
+
+.doc-main{margin-top:25px;text-align:center}
+.doc-main .section-loginform{padding:0 16px 72px;padding-bottom:calc(env(safe-area-inset-bottom) + 72px)}
+.doc-main .area_login{padding:14px 0}
+.doc-main .area_login .box_tf{display:flex;justify-content:space-between;align-items:center;position:relative;border:1px solid #d9d9d9;border-radius:5px;box-sizing:border-box}
+.doc-main .area_login .box_tf:first-child{margin-bottom:8px}
+.doc-main .area_login .box_tf .tf_loginbox{flex:0 1 auto;width:90%;padding:12px 8px;border:none;font-family:"Pretendard Variable",Pretendard;appearance:none}
+.doc-main .area_login .box_tf .btn_password{position:absolute;right:10px;min-width:20px;min-height:20px;padding:15px;background:url(../img/ic-20-eye-closed.svg) no-repeat 50% 50%}
+.doc-main .area_login .box_tf .btn_password.on{background:url(../img/ic-20-eye.svg) no-repeat 50% 50%}
+.doc-main .area_login .btn_login{width:100%;margin:8px 0;padding:12px 0;color:#fff;border-radius:5px;background-color:#000;box-sizing:border-box}
+.doc-main .area_login .info_user{display:flex;justify-content:space-between;align-items:center;margin:0 8px;padding:8px 0 12px}
+.doc-main .area_login .wrap_autologin{display:flex;align-items:center;gap:8px}
+.doc-main .area_login .inp_autologin{width:16px;height:16px}
+.doc-main .area_login .list_find{display:flex;gap:14px}
+.doc-main .area_login .list_find li{position:relative}
+.doc-main .area_login .list_find li:last-child::before{position:absolute;top:2px;left:-7px;width:1px;height:16px;background-color:#919191;content:''}
+.doc-main .area_login .link_find{color:#919191}
+.doc-main .login_another{margin-top:12px}
+.doc-main .login_another .btn_another{display:flex;justify-content:center;align-items:center;width:100%;padding:10px 0;border-radius:5px;box-sizing:border-box}
+.doc-main .login_another .btn_another.kakao{margin-bottom:16px;background-color:#fee500}
+.doc-main .login_another .btn_another.apple{border:1px solid #d9d9d9}
+.doc-main .login_another .txt_company{margin-left:5px;font-weight:600;font-size:14px}
+.doc-main .area_join{display:flex;justify-content:center;align-items:center;padding-top:25px;font-weight:500;font-size:14px}
+.doc-main .area_join .txt_join{margin-right:8px}
+.doc-main .area_join .link_join{display:block;padding:3px 8px;border:1px solid #d9d9d9;border-radius:5px}
+
+.doc-footer{display:flex;justify-content:space-between;align-items:center;position:fixed;left:0;bottom:0;right:0;z-index:500;max-width:var(--max-width);min-width:var(--min-width);height:50px;margin:0 auto;padding:0 16px;background-color:var(--bg-color);box-sizing:border-box}
+.doc-footer .txt_nonmember{font-weight:500;font-size:14px;line-height:21px}
+.doc-footer .link_nonmember{font-weight:500;font-size:12px;line-height:18px;text-decoration:underline}
