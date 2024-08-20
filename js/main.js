@@ -68,7 +68,7 @@ $(()=>{
   });
 
   // 특가 할인 판매 카운트다운
-  $('#countdown').countdown('2024/08/17', function(event) {
+  $('#countdown').countdown('2024/08/22', function(event) {
     $(this).html(event.strftime('%I : %M : %S'));
   });
 
